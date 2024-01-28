@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Website</title>
+    <!-- Add your CSS stylesheet link here -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+    <header>
+        <h1>Finance Website</h1>
+        
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+
+  </div>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+              }
+              form {
+                  max-width: 400px;
+                  margin: 0 auto;
+              }
+              input {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 10px;
+              }
+              button {
+                  padding: 10px;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  cursor: pointer;
+              }
+          </style>
+      </head>
+      <body>
+      
+          <form id="authForm">
+              <h2>Sign In / Sign Up</h2>
+      
+              <!-- Sign In Section -->
+              <div id="signInSection">
+                  <h3>Sign In</h3>
+                  <label for="signInEmail">Email:</label>
+                  <input type="email" id="signInEmail" name="signInEmail" required>
+      
+                  <label for="signInPassword">Password:</label>
+                  <input type="password" id="signInPassword" name="signInPassword" required>
+      
+                  <button type="button" onclick="signIn()">Sign In</button>
+              </div>
+      
+              <!-- Sign Up Section -->
+              <div id="signUpSection" style="display: none;">
+                  <h3>Sign Up</h3>
+                  <label for="signUpEmail">Email:</label>
+                  <input type="email" id="signUpEmail" name="signUpEmail" required>
+      
+                  <label for="signUpPassword">Password:</label>
+                  <input type="password" id="signUpPassword" name="signUpPassword" required>
+      
+                  <button type="button" onclick="signUp()">Sign Up</button>
+              </div>
+      
+              <!-- Toggle between Sign In and Sign Up sections -->
+              <p id="toggleText">Don't have an account? <a href="#" onclick="toggleSignInUp()">Sign Up</a></p>
+          </form>
+      
+          <script>
+              function toggleSignInUp() {
+                  var signInSection = document.getElementById('signInSection');
+                  var signUpSection = document.getElementById('signUpSection');
+                  var toggleText = document.getElementById('toggleText');
+      
+                  if (signInSection.style.display === 'block') {
+                      signInSection.style.display = 'none';
+                      signUpSection.style.display = 'block';
+                      toggleText.innerHTML = 'Already have an account? <a href="#" onclick="toggleSignInUp()">Sign In</a>';
+                  } else {
+                      signInSection.style.display = 'block';
+                      signUpSection.style.display = 'none';
+                      toggleText.innerHTML = 'Don\'t have an account? <a href="#" onclick="toggleSignInUp()">Sign Up</a>';
+                  }
+              }
+      
+              function signIn() {
+                  // Add your sign-in logic here
+                  alert('Sign In clicked');
+              }
+      
+              function signUp() {
+                  // Add your sign-up logic here
+                  alert('Sign Up clicked');
+              }
+          </script>
+      </body>
+      </html>
+      
+      
+    </form>
+
+    
+  </div>
+</div>
+
+    </header>
+
+    <section id="main-content">
+        <article>
+            <h2>Welcome to our Finance Platform</h2>
+            <p>
+                This is a sample finance website. Customize the content based on your needs.
+            </p>
+        </article>
+
+        <article>
+            <h2>Financial Services</h2>
+            <p>
+                Explore our range of financial services, including investment advice, budgeting, and more.
+            </p>
+        </article>
+
+        <article>
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions or need assistance, feel free to <a href="mailto:info@example.com">contact us</a>.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Finance Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript scripts here if needed -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
